@@ -13,4 +13,4 @@ O jogo é uma batalha de coletores de frutas. O objetivo é coletar o máximo de
 
 ## Licença
 
-Esse projeto é licenciado através da [General Public License v3.0](https://opensource.org/license/gpl-3-0). Para mais informações, leia o [arquivo de licença](../COPYING). [Resumindo], você pode usar, modificar e distribuir o código-fonte, mas deve manter a mesma licença e dar créditos ao autor original.
+Esse projeto é licenciado através da [General Public License v3.0](https://opensource.org/license/gpl-3-0). Para mais informações, leia o [arquivo de licença](../COPYING). [Resumindo](https://www.tldrlegal.com/license/gnu-general-public-license-v3-gpl-3), você pode usar, modificar e distribuir o código-fonte, mas deve manter a mesma licença e dar créditos ao autor original.
