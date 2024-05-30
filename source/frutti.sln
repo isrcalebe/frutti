@@ -3,21 +3,77 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{677C006F-0602-4893-B828-617FF7F114B6}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Additional Items", "Additional Items", "{677C006F-0602-4893-B828-617FF7F114B6}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 		.gitignore = .gitignore
+		.globalconfig = .globalconfig
 		Directory.Build.props = Directory.Build.props
 		frutti.sln.DotSettings = frutti.sln.DotSettings
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Platforms", "Platforms", "{46D19AC0-0849-4AD1-8B5F-F7E2800BE73C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "frutti.Desktop", "platforms\desktop\frutti.Desktop.csproj", "{F2434F01-5134-4CE4-BF08-E5619C77975A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "frutti.Android", "platforms\android\frutti.Android.csproj", "{4CC2D27E-1B30-4869-A891-BB0E22EA9E63}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Game", "Game", "{6BB6DC57-4FE5-42A2-83C2-2B680EB3EF18}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "frutti.Game", "client\game\frutti.Game.csproj", "{66E6E4EB-E93F-4584-A2FF-6FAF1CA68265}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "frutti.Game.Resources", "client\resources\frutti.Game.Resources.csproj", "{35016B42-1B84-420A-8C9D-285D24C5ECE7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{1613248D-A659-4959-BC2F-2974383E491C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{541AB17E-C0E3-4C16-8A65-B8ABFBDEBACA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "frutti.Game.Tests", "tests\visual\frutti.Game.Tests.csproj", "{F0AE6CDD-719C-4A63-B61B-F378B7A14D79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "frutti.Server", "server\frutti.Server.csproj", "{A19444E4-4A78-49E8-9338-94C2DCFAAE7D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2434F01-5134-4CE4-BF08-E5619C77975A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2434F01-5134-4CE4-BF08-E5619C77975A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2434F01-5134-4CE4-BF08-E5619C77975A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2434F01-5134-4CE4-BF08-E5619C77975A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CC2D27E-1B30-4869-A891-BB0E22EA9E63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CC2D27E-1B30-4869-A891-BB0E22EA9E63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CC2D27E-1B30-4869-A891-BB0E22EA9E63}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{4CC2D27E-1B30-4869-A891-BB0E22EA9E63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CC2D27E-1B30-4869-A891-BB0E22EA9E63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66E6E4EB-E93F-4584-A2FF-6FAF1CA68265}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66E6E4EB-E93F-4584-A2FF-6FAF1CA68265}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66E6E4EB-E93F-4584-A2FF-6FAF1CA68265}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66E6E4EB-E93F-4584-A2FF-6FAF1CA68265}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35016B42-1B84-420A-8C9D-285D24C5ECE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35016B42-1B84-420A-8C9D-285D24C5ECE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35016B42-1B84-420A-8C9D-285D24C5ECE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35016B42-1B84-420A-8C9D-285D24C5ECE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0AE6CDD-719C-4A63-B61B-F378B7A14D79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0AE6CDD-719C-4A63-B61B-F378B7A14D79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0AE6CDD-719C-4A63-B61B-F378B7A14D79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0AE6CDD-719C-4A63-B61B-F378B7A14D79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A19444E4-4A78-49E8-9338-94C2DCFAAE7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A19444E4-4A78-49E8-9338-94C2DCFAAE7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A19444E4-4A78-49E8-9338-94C2DCFAAE7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A19444E4-4A78-49E8-9338-94C2DCFAAE7D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F2434F01-5134-4CE4-BF08-E5619C77975A} = {46D19AC0-0849-4AD1-8B5F-F7E2800BE73C}
+		{4CC2D27E-1B30-4869-A891-BB0E22EA9E63} = {46D19AC0-0849-4AD1-8B5F-F7E2800BE73C}
+		{66E6E4EB-E93F-4584-A2FF-6FAF1CA68265} = {6BB6DC57-4FE5-42A2-83C2-2B680EB3EF18}
+		{35016B42-1B84-420A-8C9D-285D24C5ECE7} = {6BB6DC57-4FE5-42A2-83C2-2B680EB3EF18}
+		{F0AE6CDD-719C-4A63-B61B-F378B7A14D79} = {541AB17E-C0E3-4C16-8A65-B8ABFBDEBACA}
+		{A19444E4-4A78-49E8-9338-94C2DCFAAE7D} = {1613248D-A659-4959-BC2F-2974383E491C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1502E321-58B7-40A9-9D00-7419618FEB2D}
