@@ -9,6 +9,7 @@
     <ApplicationVersion>1</ApplicationVersion>
     <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
     <NoWarn>$(NoWarn);XA4218</NoWarn>
+    <NullabilityInfoContextSupport>true</NullabilityInfoContextSupport>
   </PropertyGroup>
   <ItemGroup Label="Package References">
     <PackageReference Include="ppy.osu.Framework.Android" Version="2024.528.1" />
